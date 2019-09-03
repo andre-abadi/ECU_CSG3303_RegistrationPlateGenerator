@@ -1,7 +1,6 @@
 """ECU CSG3303 Assignment - Photometer - Random License Plate Generator"""
 import random
 from datetime import datetime
-import os
 
 """
 This program generates a text file of random vehicle registration plate
@@ -113,6 +112,7 @@ def main():
     output = open(FILENAME, "wt")
     while counter < LIMIT:
         instance = ""
+        print(str(counter))
         # a selector to choose between 0 and 1
         selector = random.choice([0, 1])
         # based on selector do either a custom or standard plate instance
@@ -130,18 +130,14 @@ def main():
         counter += 1
     # close the file for neatness
     output.close()
-
-
-# tell the user how long the program took
-print(
-    "\n"
-    + "It took "
-    + str(datetime.now() - START)
-    + " seconds to print "
-    + str(LIMIT)
-    + " random allowable license plate permutations to: "
-    + FILENAME
-    + " of size "
-    + str(os.path.getsize(FILENAME))
-    + "."
-)
+    # tell the user how long the program took
+    print(
+        "\n"
+        + "It took "
+        + str(datetime.now() - START)
+        + " seconds to print "
+        + str(LIMIT)
+        + " random allowable license plate permutations to: "
+        + FILENAME
+        + "."
+    )
