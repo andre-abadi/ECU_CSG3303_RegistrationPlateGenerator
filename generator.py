@@ -14,16 +14,11 @@ are used to limit number of combinations generated, specify output file
 and define the maximum possible length of a combination.
 """
 
-
-# main reference was this article on random number generation
-#   https://pynative.com/python-random-module/
-
-
 # start timing how long the program takes
 START = datetime.now()
 
 # global limit for number of generated permutations
-LIMIT = 500000
+LIMIT = 500
 # counter for main program logic
 FILENAME = "output.txt"
 # maximum length of a license plate
@@ -112,7 +107,6 @@ def main():
     output = open(FILENAME, "wt")
     while counter < LIMIT:
         instance = ""
-        print(str(counter))
         # a selector to choose between 0 and 1
         selector = random.choice([0, 1])
         # based on selector do either a custom or standard plate instance
@@ -141,3 +135,8 @@ def main():
         + FILENAME
         + "."
     )
+
+
+# standard python main function caller/wrapper
+if __name__ == "__main__":
+    main()
