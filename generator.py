@@ -40,7 +40,6 @@ LETTERS = [
     "T",
     "U",
     "V",
-    "W",
     "X",
     "Y",
     "Z",
@@ -75,7 +74,7 @@ def generate_custom():
 
 
 def generate_standard():
-    """generate a random allowable standard WA plate"""
+    """generate a random allowable standard WA plate 1XXX XXX"""
     permutation = ""
     # start with 1
     permutation += "1"
@@ -85,6 +84,30 @@ def generate_standard():
     # add two random letters
     permutation += random.choice(LETTERS)
     permutation += random.choice(LETTERS)
+    # add 3 random numbers
+    permutation += random.choice(NUMBERS)
+    permutation += random.choice(NUMBERS)
+    permutation += random.choice(NUMBERS)
+    return permutation
+
+
+def generate_std_first():
+    """generate only first half of standard plate i.e. 1XXX"""
+    permutation = ""
+    # start with 1
+    permutation += "1"
+    # add a letter between A and G with F skipped
+    first_letter = ["A", "B", "C", "D", "E", "G"]
+    permutation += random.choice(first_letter)
+    # add two random letters
+    permutation += random.choice(LETTERS)
+    permutation += random.choice(LETTERS)
+    return permutation
+
+
+def generate_std_last():
+    """generate only the back half of a standard plate i.e. XXX"""
+    permutation = ""
     # add 3 random numbers
     permutation += random.choice(NUMBERS)
     permutation += random.choice(NUMBERS)
