@@ -122,7 +122,7 @@ def main():
     try:
         print("Random Registration Plate Generator for Blue WA Plates.")
         # check how many plates to generate
-        limit = input("How many plates? Default is " + str(default_limit) + ": ")
+        limit = input("How many plates? Default is " + str(default_limit)+": ")
         if not limit:
             limit = default_limit
         else:
@@ -138,7 +138,7 @@ def main():
         else:
             filename = filename.strip()
         print("Using: " + filename + ".\n")
-        selector = input("Standard (1) or Custom (2)? Default is 1: ")
+        selector = input("Plate type to generate? Default is 1: ")
         if not selector:
             selector = 1
         else:
@@ -154,6 +154,10 @@ def main():
                 instance = generate_standard()
             elif selector == 2:
                 instance = generate_custom()
+            elif selector == 3:
+                instance = generate_std_first()
+            elif selector == 4:
+                instance = generate_std_last()
             # write the instance to the output file
             output.write(instance)
             # add a carriage return so it's one line per instance
