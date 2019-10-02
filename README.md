@@ -6,9 +6,10 @@ This program generates a text file of random vehicle registration plate combinat
 2. `git clone git@github.com:dancingborg/ECU_CSG3303_RegistrationPlateGenerator.git generator`
 
 # Usage
-1. `How many plates? Default is 5:` Enter the number of plates to be generated.
-2. `Which file to write to? Default is output.txt:` Enter the desired file to be written by the program.
-3. `Plate type to generate? Default is 1:` Enter the plate type to be generated.
+1. Execute `python3 generator.py`
+2.  Enter the number of plates to be generated. `How many plates? Default is 5:`
+3.  Enter the desired file to be written by the program. `Which file to write to? Default is output.txt:`
+4.  Enter the plate type to be generated. `Plate type to generate? Default is 1:`
 
 ## Plate Types
 At this time the interactivity of plate type selection is rudimentary. The user should read `generator.py` but a summary is provided below:
