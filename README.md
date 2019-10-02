@@ -3,7 +3,6 @@ This program generates a text file of random vehicle registration plate combinat
 
 # Installation
 1. `sudo apt install python3 git`
-2. Clone this repo
 
 # Usage
 1. Execute `python3 generator.py`
