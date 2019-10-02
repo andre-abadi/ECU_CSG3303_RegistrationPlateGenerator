@@ -19,9 +19,9 @@ At this time the interactivity of plate type selection is rudimentary. The user 
     - 2 random letters
     - 3 random numbers
 2. Custom WA plate in the format ABCDEFG
-    - Minimum length of 3 characters
+    - Minimum length of 3 alphanumeric characters
     - Spaces do not count towards minimum characters
-    - Maximum of 7 characters
+    - Maximum of 7 alphanumeric characters
     - May not start with a space
 3. First half of standard WA plate in the format 1ABC
 4. Second half of standard WA plate in the format 123
