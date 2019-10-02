@@ -110,7 +110,9 @@ def main():
     try:
         print("Random Registration Plate Generator for Blue WA Plates.")
         # check how many plates to generate
-        limit = input("How many plates? Default is " + str(default_limit)+": ")
+        limit = input(
+            "How many plates? Default is " + str(default_limit) + ": "
+        )
         if not limit:
             limit = default_limit
         else:
@@ -136,6 +138,7 @@ def main():
         output = open(filename, "wt")
         # counter for the while loop
         counter = 0
+        output.write("Text\n")
         while counter < limit:
             instance = ""
             if selector == 1:
