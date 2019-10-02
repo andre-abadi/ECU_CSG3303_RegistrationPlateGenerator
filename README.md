@@ -2,10 +2,8 @@
 This program generates a text file of random vehicle registration plate combinations that are valid in Western Australia. The scope of generation is limited to standard aluminium plates with the blue Western Australia top-bar. Plates are either custom, which is between 3 and 7 characters with the leading character not being a space, or a standard plate. Standard plates are generated according to contsraints known at the time of this program being made, and commented accordingly. Global variables are used to limit number of combinations generated, specify output file and define the maximum possible length of a combination.
 
 # Installation
-```
-sudo apt install python3
-git clone git@github.com:dancingborg/ECU_CSG3303_RegistrationPlateGenerator.git
-```
+1. `sudo apt install python3 git`
+2. `git clone git@github.com:dancingborg/ECU_CSG3303_RegistrationPlateGenerator.git generator`
 
 # Usage
 1. `How many plates? Default is 5:` Enter the number of plates to be generated.
