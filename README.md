@@ -1,3 +1,6 @@
+# Archival Notice
+**This repository is deprecated and archived because it now forms part of [dancingborg/ECU_CSG3303_Optometer](https://github.com/dancingborg/ECU_CSG3303_Optometer).**
+
 # Introduction
 This program generates a text file of random vehicle registration plate combinations that are valid in Western Australia. The scope of generation is limited to standard aluminium plates with the blue Western Australia top-bar. Plates are either custom, which is between 3 and 7 characters with the leading character not being a space, or a standard plate. Standard plates are generated according to contsraints known at the time of this program being made, and commented accordingly. Global variables are used to limit number of combinations generated, specify output file and define the maximum possible length of a combination.
 
